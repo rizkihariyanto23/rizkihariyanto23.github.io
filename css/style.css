@@ -4,6 +4,7 @@ html {
 
 body {
     margin-bottom: 120px;
+    margin-top: 25px;
 }
 
 .jumbotron img {
@@ -17,7 +18,7 @@ hr {
 }
 
 section {
-    min-height: 600px;
+    min-height: 500px;
 }
 
 .portfolio {
@@ -42,3 +43,4 @@ footer p {
     font-size: 1em;
 
 }
+

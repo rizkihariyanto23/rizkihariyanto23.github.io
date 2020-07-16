@@ -1,15 +1,24 @@
 // Get the modal
 var modal = document.getElementById('myModal');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
+var images = document.getElementsByClassName('img-thumbnail'); // make new variable images to save class
+var arr = [...images]; // convert images(html collection) to array
+
+// loop arr
+const modalImg = document.getElementById("img-modal");
+const captionText = document.getElementById("caption");
+
+arr.forEach(el => {
+  // add event click every element
+  el.addEventListener('click', () => {
+    // get image path
+    let src = el.getAttribute('src');
+    let caption = el.getAttribute('alt');
+      modal.style.display = "block";
+      modalImg.src = src;
+      captionText.innerHTML = caption;
+  })
+})
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -26,7 +35,7 @@ $(window).on('load', function(){
 });
 
 $(window).scroll(function(){
-	var wScroll = $(this).scrollTop();
+	const wScroll = $(this).scrollTop();
 
 	$('.jumbotron img').css({
 		'transform': 'translate(0px, '+ wScroll / 4 +'%)'

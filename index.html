@@ -50,8 +50,18 @@
     <!-- jumbotron  -->
     <div class="jumbotron text-center">
         <img src="img/rizki.jpg" class="img-circle">
-        <h1>Rizki Hariyanto</h1>
-        <p>Web Developer | Junior Programmer</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <h1 class="bg-danger" id="border">Rizki Hariyanto</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-sm-offset-4">
+                            <p class="bg-danger" id="border">Web Developer | Junior Programmer</p>
+                        </div>
+                    </div>
+                </div>
     </div>
     <!-- akhir jumbotron -->
 
@@ -86,41 +96,47 @@
                     <hr>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href="" class="thumbnail">
-                        <img src="img/1.png">
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="" class="thumbnail">
-                        <img src="img/2.png">
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="" class="thumbnail">
-                        <img src="img/3.png">
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="" class="thumbnail">
-                        <img src="img/4.png">
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="" class="thumbnail">
-                        <img src="img/5.png">
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="" class="thumbnail">
-                        <img src="img/6.png">
-                    </a>
-                </div>
-            </div>
+                
+            <!-- <img id="myImg" src="img_lights.jpg" alt="Northern Lights, Norway" width="300" height="200"> -->
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                                <img id="myImg" src="img/1.png" alt="Portfolio 1" class="img-thumbnail">
+                        </div>
+                        <div class="col-sm-4">
+                                <img id="myImg" src="img/2.png" alt="Porfolio 2" class="img-thumbnail">
+                        </div>
+                        <div class="col-sm-4">
+                                <img id="myImg" src="img/3.png" alt="Porfolio 2" class="img-thumbnail">
+                        </div>
+                        <div class="col-sm-4">
+                                <img id="myImg" src="img/4.png" alt="Porfolio 2" class="img-thumbnail">
+                        </div>
+                        <div class="col-sm-4">
+                                <img id="myImg" src="img/5.png" alt="Porfolio 2" class="img-thumbnail">
+                        </div>
+                        <div class="col-sm-4">
+                                <img id="myImg" src="img/6.png" alt="Porfolio 2" class="img-thumbnail">
+                        </div>
+                        
+                    </div>
+                    <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
         </div>
     </section>
     <!-- akhir portfolio -->
+
+    <!-- modal -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+    <!-- akhir modal -->
 
     <!-- contact -->
     <section class="contact" id="contact">

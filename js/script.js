@@ -1,16 +1,20 @@
-// // event pada saat link
-// $('.page-scroll').on('click', function(e){
+// Get the modal
+var modal = document.getElementById('myModal');
 
-//     // ambil isi href
-//     var tujuan = $(this).attr('href');
-//     // tangkap element
-//     var elemenTujuan = $(tujuan);
-    
-//     // pindahkan scroll
-//     $('.body').animate({
-//         scrollTop: elemenTujuan.offset().top - 50
-//     }, 1250, 'easeInOutExpo'); 
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
 
-//     e.preventDefault();
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-// });
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}

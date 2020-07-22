@@ -3,11 +3,10 @@ var modal = document.getElementById('myModal');
 
 var images = document.getElementsByClassName('img-thumbnail'); // make new variable images to save class
 var arr = [...images]; // convert images(html collection) to array
-
-// loop arr
 const modalImg = document.getElementById("img-modal");
 const captionText = document.getElementById("caption");
 
+// looping arr
 arr.forEach(el => {
   // add event click every element
   el.addEventListener('click', () => {

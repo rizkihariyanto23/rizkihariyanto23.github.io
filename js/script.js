@@ -49,12 +49,12 @@ $(window).scroll(function(){
 	});
 
 
-	// portfolio
-	if( wScroll > $('.portfolio').offset().top - 600 ) {
+	// sertifikat
+	if( wScroll > $('.sertifikat').offset().top - 600 ) {
 		
-		$('.portfolio .img-thumbnail').each(function(i) {
+		$('.sertifikat .img-thumbnail').each(function(i) {
 			setTimeout(function() {
-				$('.portfolio .img-thumbnail').eq(i).addClass('muncul');
+				$('.sertifikat .img-thumbnail').eq(i).addClass('muncul');
 			}, 180 * (i+1))
 
 		});

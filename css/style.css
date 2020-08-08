@@ -74,18 +74,22 @@ section {
   object-position: center;
 }
 
-.portfolio {
+.sertifikat {
     background-color: #eee;
     margin-bottom: 100px;
 }
 
-.portfolio .img-thumbnail {
+.img-thumbnail .pointer {
+  pointer-events: auto;
+}
+
+.sertifikat .img-thumbnail {
 	opacity: 0;
 	transform: translate(0,-40px);
   transition: .3s;
 }
 
-.portfolio .img-thumbnail.muncul {
+.sertifikat .img-thumbnail.muncul {
 	opacity: 1;
 	transform: translate(0,0);
 }
@@ -97,8 +101,16 @@ section {
   width: 100%;
 }
 
-.project {
+.portfolio {
   margin-bottom: 150px;
+}
+
+.margin {
+  margin-bottom: 25px;
+}
+
+.margin-dua {
+  margin-bottom: 10px;
 }
 
 
